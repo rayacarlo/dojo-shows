@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import Shows from '@/components/Shows.vue';
+import Edit from '@/components/Shows/Edit.vue'
 import Details from '@/components/Shows/Details.vue';
 import NotFound from '@/components/NotFound.vue'
 
@@ -17,6 +18,11 @@ export default new VueRouter({
     {
       path: '/shows/:id',
       component: Details
+    },
+    {
+      path: '/shows/:id/edit',
+      component: Edit,
+      props: true
     },
     {
       path: '*',

@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="container">
+    <img alt="Logo" class="img-fluid my-4" src="@/assets/netflix.svg">
     <router-view />
   </div>
 </template>
@@ -18,5 +19,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 2rem;
+}
+.img-fluid{
+  max-width: 20rem;
 }
 </style>
